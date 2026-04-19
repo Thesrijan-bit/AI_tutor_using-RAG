@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="mermaid">
+    graph TD
+    classDef start fill:#3ddbc7,stroke:#fff,stroke-width:2px,color:#fff,rx:15,ry:15;
+    classDef decision fill:#f08a24,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef process fill:#fff,stroke:#fff,stroke-width:2px,color:#333;
+    linkStyle default stroke:#fff,stroke-width:3px,color:#fff;
+    
+    A([Start]):::start --> B{Is it?:::decision}
+    B -->|Yes| C[Process]:::process
+    B -->|No| D([End]):::start
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+</html>

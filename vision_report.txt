@@ -1,0 +1,9 @@
+TIMESTAMP: 2026-04-19 19:10:20.610235
+REPORT:
+The image presents a mathematical problem, specifically JEE-ADVANCED-2018-PAPER-1 MATHEMATICS. The problem is divided into two parts: (A) and (B). 
+
+Part (A) involves an argument with a non-zero complex number z, denoted as arg(z), and its relationship to the principal argument. It also includes a statement about the function f defined by f(t) = arg(-1 + it) for all t ∈ R, which is continuous at all points of R.
+
+Part (B) deals with the locus of the point z satisfying the condition arg((z - z1)(z2 - z3)) = π, where z1, z2, and z3 are distinct complex numbers. The problem asks for the straight line that lies on this locus.
+
+Overall, the image presents a challenging mathematical problem that requires careful analysis and solution.
