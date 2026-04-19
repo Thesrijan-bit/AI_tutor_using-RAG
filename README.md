@@ -1,10 +1,10 @@
-# NOVA: The Art of Reasoning 🧪🔬
+# NOVA: The Art of Reasoning 
 
 **NOVA** is a premium, technical AI Reasoning Tutor designed for deep mathematical analysis and logical problem-solving. Powered by the **Kimi K2.5** model via NVIDIA AI Endpoints, NOVA offers a high-performance study companion that not only provides answers but visualizes its entire "thinking process."
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Deep Reasoning Engine**: Utilizes the Kimi K2.5 model's internal thinking process to provide detailed, step-by-step logic before the final answer.
 - **Multimodal Vision**: Capability to "read" images. Upload screenshots of JEE Advanced problems, handwritten notes, or technical diagrams for instant analysis.
@@ -15,7 +15,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 AI_Tutor/
@@ -32,7 +32,7 @@ AI_Tutor/
 
 ---
 
-## 🧠 Core Concepts Used
+## Core Concepts Used
 
 ### 1. Multimodal AI (Vision)
 NOVA implements **Vision Transformers (ViT)** logic by processing base64 image data alongside text prompts. The backend constructs a multi-modal message schema that allows the model to interpret visual problem sets in real-time.
@@ -51,7 +51,7 @@ The design follows a **Technical Monochromatic** philosophy, using high-contrast
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 1. **Install Dependencies**:
    ```powershell
@@ -74,4 +74,4 @@ The design follows a **Technical Monochromatic** philosophy, using high-contrast
 
 ---
 
-*Built with passion for the Art of Reasoning.* 🥂🧪🔬
+*Built with passion for the Art of Reasoning.* 
