@@ -1,0 +1,26 @@
+# Python-specific .gitignore entries
+
+# Virtual Environment
+__pycache__/
+*.py[cod]
+*.env
+
+# Cache files
+*.pyo
+*.pyd
+*.db
+
+# RAG/ML project related files
+*.model
+*.checkpoint
+*.h5
+*.onnx
+*.pt
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / Editor specific
+.vscode/
+.idea/
