@@ -43,8 +43,8 @@ Frontend: HTML5/CSS3 (Monochromatic Technical Aesthetic)
 
 1. Clone & Install:
 
-git clone https://github.com/your-username/nova.git
-cd nova
+git clone https://github.com/Thesrijan-bit/AI_tutor_using-RAG
+cd AI_tutor_using-RAG
 pip install -r requirements.txt
 
 2. Environment Configuration:
