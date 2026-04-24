@@ -18,17 +18,19 @@
 ## Project Structure
 
 ```text
-AI_Tutor/
-├── server.py              # FastAPI Backend: Manages AI streaming, SQLite DB, and Vision logic.
-├── frontend/              # Web-based UI layer
-│   ├── index.html         # Structural layout (Home & Analysis views)
-│   ├── style.css          # Technical monochromatic styling & grid system
-│   ├── app.js             # Client-side logic: Streaming, Image Zoom, & Rendering
-│   └── tutor_avatar.png   # Custom high-fidelity tutor persona
-├── tutor_memory.db        # Persistent SQLite database for session history
-├── requirements.txt       # Python dependencies
-└── .env                   # Configuration for NVIDIA API Keys
-```
+my-rag-project/
+├── data/
+│   └── nova_brain_dump.txt       # Raw text data/knowledge base
+├── src/
+│   ├── rag_engine.py             # Core logic for RAG
+│   └── server.py                 # API or backend server logic
+├── tests/
+│   ├── scratch_test.html         # Frontend/UI testing
+│   └── scratch_test.py           # Unit or integration testing
+├── .gitignore                    # Git exclusion rules
+├── README.md                     # Project documentation
+└── requirements.txt              # Project dependencies
+
 
 ---
 
