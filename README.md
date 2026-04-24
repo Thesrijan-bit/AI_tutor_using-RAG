@@ -1,79 +1,62 @@
-# NOVA: The Art of Reasoning 
+NOVA | Deep Reasoning AI Tutor
 
-**NOVA** is a premium, technical AI Reasoning Tutor designed for deep mathematical analysis and logical problem-solving. Powered by the **Kimi K2.5** model via NVIDIA AI Endpoints, NOVA offers a high-performance study companion that not only provides answers but visualizes its entire "thinking process."
+​NOVA is a technical reasoning engine designed for complex problem-solving in mathematics and computer science. By leveraging the Kimi K2.5 model via NVIDIA AI Endpoints, it exposes the model's internal "Chain-of-Thought" (CoT) to provide a transparent, step-by-step logic path alongside final solutions.
 
----
+​🚀 Key Capabilities
 
-## Key Features
+​Logic Visualization: Real-time streaming of the model's internal reasoning process using ndjson.
 
-- **Deep Reasoning Engine**: Utilizes the Kimi K2.5 model's internal thinking process to provide detailed, step-by-step logic before the final answer.
-- **Multimodal Vision**: Capability to "read" images. Upload screenshots of JEE Advanced problems, handwritten notes, or technical diagrams for instant analysis.
-- **Dual-Column Interface**: A sophisticated UI that allows you to scroll through the reasoning and the final answer independently in side-by-side columns.
-- **Persistent Memory**: Integrated SQLite database ensures Nova remembers past conversations, previous images, and context across sessions.
-- **Professional Rendering**: High-fidelity math typesetting using **KaTeX** and algorithmic diagramming with **Mermaid.js**.
-- **Monochromatic Tech Aesthetic**: A sleek, high-contrast dark-mode interface with neon-lime accents and technical grid overlays.
+​Multimodal Input: Native support for image-based queries (handwritten math, diagrams, screenshots).
 
----
+​Persistent Context: SQLite-backed session memory for long-term project awareness.
 
-## Project Structure
+​Technical Rendering: High-fidelity mathematical typesetting via KaTeX and logic flowcharts via Mermaid.js.
 
-```text
-my-rag-project/
+​Advanced UI: A dual-column layout for independent scrolling of "Thinking" and "Solution" panes.
+
+​📂 Project Structure
+
+nova/
 ├── data/
-│   └── nova_brain_dump.txt       # Raw text data/knowledge base
+│   └── nova_brain_dump.txt   # Knowledge base for RAG augmentation
 ├── src/
-│   ├── rag_engine.py             # Core logic for RAG
-│   └── server.py                 # API or backend server logic
+│   ├── rag_engine.py         # RAG pipeline & LLM orchestration
+│   └── server.py             # Backend API & session management
 ├── tests/
-│   ├── scratch_test.html         # Frontend/UI testing
-│   └── scratch_test.py           # Unit or integration testing
-├── .gitignore                    # Git exclusion rules
-├── README.md                     # Project documentation
-└── requirements.txt              # Project dependencies
+│   ├── scratch_test.html     # Frontend UI prototyping
+│   └── scratch_test.py       # Integration tests for reasoning logic
+├── .gitignore                # Environment & cache exclusions
+├── README.md                 # Technical documentation
+└── requirements.txt          # Python dependencies
+
+🛠️ Technical Stack
+
+Model: Kimi K2.5 (Reasoning-focused LLM)
+
+Inference: NVIDIA AI Endpoints
+
+Database: SQLite (Conversation History)
+
+Frontend: HTML5/CSS3 (Monochromatic Technical Aesthetic)
+
+🔧 Installation & Setup
+
+1. Clone & Install:
+
+git clone https://github.com/your-username/nova.git
+cd nova
+pip install -r requirements.txt
+
+2. Environment Configuration:
+Create a .env file in the root directory:
 
 
----
+NVIDIA_API_KEY=your_api_key_here
 
-## Core Concepts Used
 
-### 1. Multimodal AI (Vision)
-NOVA implements **Vision Transformers (ViT)** logic by processing base64 image data alongside text prompts. The backend constructs a multi-modal message schema that allows the model to interpret visual problem sets in real-time.
+3. Launch : 
 
-### 2. ndjson Streaming
-To provide a smooth, responsive experience, NOVA uses **ndjson (Newline Delimited JSON)** streaming. This allows the reasoning steps to appear word-by-word, keeping the user engaged with the "Thinking" process as it happens.
+python src/server.py
 
-### 3. Persistent SQLite Memory
-Unlike standard AI chats that reset on refresh, NOVA uses a relational database to store conversation logs. This enables **long-term contextual awareness**, allowing the model to recall steps from previous sessions.
+Access the local interface at http://localhost:8000.
 
-### 4. LaTeX & Mermaid Integration
-Mathematical reasoning is made human-readable through **KaTeX** for professional-grade equations and **Mermaid.js** for generating algorithmic flowcharts and logic diagrams.
-
-### 5. Technical UI/UX Philosophy
-The design follows a **Technical Monochromatic** philosophy, using high-contrast neon accents on a charcoal background to reduce eye strain and emphasize a professional, research-oriented environment.
-
----
-
-##  Getting Started
-
-1. **Install Dependencies**:
-   ```powershell
-   pip install -r requirements.txt
-   ```
-
-2. **Configure API Key**:
-   Add your NVIDIA API key to the `.env` file:
-   ```text
-   NVIDIA_API_KEY=nvapi-your-key-here
-   ```
-
-3. **Run the Server**:
-   ```powershell
-   python server.py
-   ```
-
-4. **Access NOVA**:
-   Open your browser to `http://localhost:8000`.
-
----
-
-*Built with passion for the Art of Reasoning.* 
